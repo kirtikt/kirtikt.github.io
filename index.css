@@ -573,10 +573,6 @@ justify-content: center;
         font-size: 1.5rem !important;
         /* width: 10%; */
     }
-
-    .hover-underline-animation-bold::after {
-        height: 2px;
-    }
 }
 
 @media only screen and (max-width:957px) and (min-width:885px){
