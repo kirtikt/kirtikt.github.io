@@ -482,6 +482,10 @@ justify-content: center;
         margin: 0 0 0 1rem;
     }
 
+    .hover-underline-animation-bold::after {
+        height: 2px;
+    }
+
 }
 
 /* 1:50:17 */
@@ -558,12 +562,20 @@ justify-content: center;
         left: 2rem;
     }
 
+    .hover-underline-animation-bold::after {
+        height: 2px;
+    }
+
 }
 
 @media only screen and (max-width:1080px) {
     .aboutme {
         font-size: 1.5rem !important;
         /* width: 10%; */
+    }
+
+    .hover-underline-animation-bold::after {
+        height: 2px;
     }
 }
 
@@ -651,5 +663,9 @@ justify-content: center;
         border-radius: 5px;
         /* padding: 0 0 0 1rem; */
         /* position: fixed; */
+    }
+
+    .hover-underline-animation-bold::after {
+        height: 2px;
     }
 }
