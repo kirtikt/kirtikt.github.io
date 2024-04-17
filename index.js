@@ -59,4 +59,4 @@ window.addEventListener('load', function () {
         setTimeout(function () {
             loader.style.display = 'none'; // Hide the loader after fade out
         }, 2500); // Adjust delay time + fade out duration
-    });
+});
