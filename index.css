@@ -276,7 +276,7 @@ html {
         z-index: 9999;
         transition: opacity 0.7s ease;
         /* For smooth fade out */
-}
+    }
 
 .mainname {
         font-size: 50px;
@@ -284,8 +284,8 @@ html {
         background-color: black;
         color: white;
         margin: 3rem 0 0 2rem;
-    
- }
+
+}
 
 .portnyear {
         font-size: 50px;
