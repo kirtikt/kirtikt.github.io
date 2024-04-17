@@ -47,3 +47,16 @@ class AnimationReveal {
 document.addEventListener('DOMContentLoaded', () => {
     new AnimationReveal('.animation-reveal');
 });
+
+// Loader
+window.addEventListener('load', function () {
+        const loader = document.querySelector('.loader');
+
+        setTimeout(function () {
+            loader.style.opacity = '0'; // Fade out the loader
+        }, 2000); // Adjust delay time as needed
+
+        setTimeout(function () {
+            loader.style.display = 'none'; // Hide the loader after fade out
+        }, 2500); // Adjust delay time + fade out duration
+    });
