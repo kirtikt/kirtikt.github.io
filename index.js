@@ -57,6 +57,6 @@ window.addEventListener('load', function () {
         }, 2000); // Adjust delay time as needed
 
         setTimeout(function () {
-            loader.style.display = 'none'; // Hide the loader after fade out
+            loader.style.transform = 'translateY(100%)'; // Hide the loader after fade out
         }, 2500); // Adjust delay time + fade out duration
 });
