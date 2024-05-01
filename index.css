@@ -5,10 +5,23 @@
     background-color: #cdcdcd;
     font-family: "Oxygen", "sans-serif";
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    
     /* Adding animation to all the elements for smooth slide effect in side navigration bar in small screen devices */
     /* You can specifiy the animation specifically for side-nave */
     transition: 0.7s ease-in-out;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:focus,
+a:visited,
+a:active {
+    outline: none;
 }
 
 html {
@@ -18,29 +31,54 @@ html {
 
 #navbar {
     display: flex;
-    justify-content: space-around;
-    margin: 50px 0 0 0;
+    justify-content: space-evenly;
+    margin: 30px 0 0 0;
 }
 
 .left {
     font-weight: bolder;
-    font-size: larger;
-    /* position:; */
-    top: 0;
+    font-size: 25px;
+/* new */
+    position: fixed; 
+    /* top: 0; */
+/* new */
+
+    z-index: 1;
+    /* margin: 0 0 0 0; */
+/* new */
+    background: none;
+    
+}
+
+/* new */
+
+.left-pre{
+    position: relative;
+    right: 40px;
 }
 
 .current,
 .reside,
 .links {
     font-weight: bolder;
+    background: none;
+    font-size: 20px;
 }
 
-/* .links{
+.links{
     position: fixed;
     z-index: 1;
-} */
+}
+
+/* new */
+
+.links-pre{
+    position: relative;
+    width: 280px;
+}
 
 .links a {
+    background: none;
     text-decoration: none;
     color: black;
 }
@@ -104,7 +142,7 @@ html {
     margin: 50px 0 0 100px;
     height: 10%;
     border-radius: 10px;
-/*     box-shadow: 10px 10px 25px gray; */
+    /* box-shadow: 10px 10px 25px gray; */
     filter: grayscale(100%);
     transition: filter 0.5s;
 }
@@ -179,9 +217,10 @@ html {
     margin: 100px 0 0 150px;
     text-decoration: none !important;
     font-weight: bolder;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.pro1head a{
+.pro1head a {
     text-decoration: none;
     color: black;
 }
@@ -196,10 +235,15 @@ html {
     width: 45%;
     height: 50%;
     border-radius: 10px;
-/*     box-shadow: 10px 10px 25px gray; */
+    /* box-shadow: 10px 10px 25px gray; */
     filter: grayscale(100%);
     transition: filter 0.5s;
 }
+
+/* .project1-pre a{
+    text-decoration: none;
+    color: black;
+} */
 
 .pro1img:hover {
     filter: grayscale(0%);
@@ -262,41 +306,53 @@ html {
     transform: translateY(0) !important;
 }
 
+/* 1:50:17 */
+
+
+/* Responsive Navigation Bar */
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    color: inherit;
+}
+
+/* Newly added */
+
 .loader {
-        background-color: black;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        opacity: 1;
-        z-index: 9999;
-        transition: opacity 0.7s ease;
-        /* For smooth fade out */
-    }
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    opacity: 1;
+    z-index: 9999;
+    transition: opacity 0.7s ease;
+    /* For smooth fade out */
+    transform: translateY(0);
+}
 
 .mainname {
-        font-size: 50px;
-        font-weight: bolder;
-        background-color: black;
-        color: white;
-        margin: 3rem 0 0 2rem;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    margin: 3rem 0 0 2rem;
 
 }
 
 .portnyear {
-        font-size: 50px;
-        font-weight: bolder;
-        background-color: black;
-        color: white;
-        margin: 0 0 0 2rem;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    margin: 0 0 0 2rem;
 }
-    
 
-/* Newly added */
 /* Media Query for smaller screens */
 @media only screen and (max-width: 884px) {
     #navbar {
@@ -466,6 +522,8 @@ justify-content: center;
         margin: 1rem 0 0 0;
         /* padding-right: 3rem; */
         align-items: center;
+        -webkit-tap-highlight-color: transparent;
+
     }
 
     .project1 {
@@ -520,20 +578,6 @@ justify-content: center;
         height: 2px;
     }
 
-}
-
-/* 1:50:17 */
-
-
-/* Responsive Navigation Bar */
-.hamburger {
-    font-size: 24px;
-    cursor: pointer;
-    background: none;
-    color: inherit;
-}
-
-@media only screen and (max-width: 884px) {
     #navbar>.hamburger {
         display: block !important;
         position: fixed;
@@ -599,7 +643,6 @@ justify-content: center;
     .hover-underline-animation-bold::after {
         height: 2px;
     }
-
 }
 
 @media only screen and (max-width:1080px) {
@@ -607,9 +650,10 @@ justify-content: center;
         font-size: 1.5rem !important;
         /* width: 10%; */
     }
+
 }
 
-@media only screen and (max-width:957px) and (min-width:885px){
+@media only screen and (max-width:957px) and (min-width:885px) {
     .lowersection {
         align-self: center;
         margin: 2rem 0 0 1rem;
@@ -641,14 +685,14 @@ justify-content: center;
         margin: 1rem 0 0 1rem;
         font-size: 1rem;
     }
-    
+
     .downcre {
         font-size: 1rem;
         margin: 0 0 0 0;
         width: 10%;
         max-width: 100%;
     }
-    
+
     .arrow {
         font-size: 1rem;
         font-size: 3.5rem !important;
@@ -679,6 +723,8 @@ justify-content: center;
         margin: 1rem 0 0 0;
         /* padding-right: 3rem; */
         align-items: center;
+        -webkit-tap-highlight-color: transparent;
+
     }
 
     .project1 {
@@ -697,5 +743,12 @@ justify-content: center;
 
     .hover-underline-animation-bold::after {
         height: 2px;
+    }
+
+}
+/* new */
+@media only screen and (max-width:1200px){
+    .left, .current, .reside, .links{
+        font-size: 1.2rem;
     }
 }
