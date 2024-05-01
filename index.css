@@ -396,7 +396,7 @@ position: relative;
         flex-direction: column-reverse;
         max-width: 100%;
         font-size: 250% !important;
-        margin: 1rem 0 0 3rem;
+        margin: 5rem 0 0 2rem;
     }
 
 
@@ -409,7 +409,7 @@ position: relative;
     #devimage {
         width: 80%;
         max-width: 100%;
-        margin: 2rem 0 0 3rem;
+        margin: 2rem 0 0 2rem;
         border-radius: 5px;
     }
 
@@ -643,6 +643,10 @@ justify-content: center;
     .hover-underline-animation-bold::after {
         height: 2px;
     }
+
+    .left-pre{
+        right:0;
+    }
 }
 
 @media only screen and (max-width:1080px) {
@@ -749,6 +753,6 @@ justify-content: center;
 /* new */
 @media only screen and (max-width:1200px){
     .left, .current, .reside, .links{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
