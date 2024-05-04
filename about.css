@@ -786,8 +786,12 @@ justify-content: center;
         /* width: 10%; */
     }
 
-    .cret{
+    .enthusiaticu, .developer{
         font-size: 4rem;
+    }
+
+    .cret{
+        font-size: 8rem;
     }
 
 }
