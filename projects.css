@@ -747,8 +747,7 @@ justify-content: center;
     }
 
     #contact .gmail a {
-        font-size: 2rem !important;
-    }
+        font-size: 1.7rem !important;    }
 
     .info{
         flex-direction: column;
