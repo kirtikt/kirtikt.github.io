@@ -261,7 +261,7 @@ html {
 .gmail a {
     color: white;
     text-decoration: none;
-    font-size: 80px;
+    font-size: 8vw;
 }
 
 
@@ -546,7 +546,7 @@ justify-content: center;
     }
 
     #contact .gmail a {
-        font-size: 2.7rem !important;
+        font-size: 6vw;
     }
     
     .info{
