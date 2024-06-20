@@ -136,7 +136,7 @@ html {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 100px;
+    font-size: 11vw;
     margin: 150px 0 0 0;
     line-height: 0.9;
 }
@@ -569,7 +569,7 @@ position: relative;
         display: flex;
         flex-direction: column-reverse;
         max-width: 100%;
-        font-size: 250% !important;
+        font-size: 17vw;
         margin: 5rem 0 0 0;
     }
 
@@ -747,7 +747,13 @@ justify-content: center;
     }
 
     #contact .gmail a {
-        font-size: 1.7rem !important;    }
+        font-size: 7vw;
+        font-weight: bolder;
+    }
+
+    .contactform{
+        margin: 20vw 0 0 0;
+    }
 
     .info{
         flex-direction: column;
