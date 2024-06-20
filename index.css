@@ -133,7 +133,7 @@ html {
 
 .uppersection {
     font-weight: bold;
-    font-size: 100px;
+    font-size: 12vw;
     margin: 50px 0 0 100px;
 }
 
@@ -250,6 +250,41 @@ html {
     transition: 0.5s
 }
 
+/* new project */
+.projectheads{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2vw;
+    font-weight: bolder;
+    margin: 5vw 0 5vw 0;
+}
+
+.bodypro{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bolder;
+    font-size: 4vw;
+}
+
+.bodypro a{
+    text-decoration: none;
+    color: black;
+}
+
+.bodypro img{
+    width: 25vw;
+    border-radius: 10px;
+    filter: grayscale(100);
+    transition: .5s;
+}
+
+.bodypro img:hover{
+    filter: grayscale(0);
+    transition: .5s;
+}
+
 #contact {
     display: flex;
     justify-content: space-evenly;
@@ -260,7 +295,7 @@ html {
 .gmail a {
     color: black;
     text-decoration: none;
-    font-size: 80px;
+    font-size: 7vw;
 }
 
 
@@ -395,7 +430,7 @@ position: relative;
         display: flex;
         flex-direction: column-reverse;
         max-width: 100%;
-        font-size: 250% !important;
+        font-size: 12vw;
         margin: 5rem 0 0 2rem;
     }
 
@@ -447,7 +482,7 @@ font-size: 5rem;
         justify-content: center;
         align-items: center;
         display: flex;
-        font-size: 150% !important;
+        font-size: 10vw !important;
         margin: 0 0.5rem 0 0;
 
     }
@@ -518,7 +553,7 @@ justify-content: center;
     }
 
     .pro1head {
-        font-size: 2rem !important;
+        font-size: 5vw !important;
         margin: 1rem 0 0 0;
         /* padding-right: 3rem; */
         align-items: center;
@@ -538,6 +573,10 @@ justify-content: center;
         border-radius: 5px;
     }
 
+    .contactform{
+        margin: 20vw 0 0 0;
+    }
+
     #contact {
         width: 100%;
         max-width: 100%;
@@ -545,7 +584,8 @@ justify-content: center;
     }
 
     #contact .gmail a {
-        font-size: 1.7rem !important;
+        font-size: 7vw;
+        font-weight: bolder;
     }
 
     .info{
@@ -651,6 +691,40 @@ justify-content: center;
 
     .left-pre{
         right:0;
+    }
+
+    .blocking{
+        display: none;
+    }
+
+    .projectheads{
+        font-size: 6vw;
+        /* align-items: start; */
+        justify-content: flex-start;
+        margin: 13vw;
+    }
+
+    .bodypro{
+        flex-direction: column;
+        justify-content: initial;
+        align-items: stretch;
+        margin: 13vw;
+        font-size:9.5vw;
+    }
+
+    .bodypro br{
+        display: none;
+    }
+
+    .pre-imagebody{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5vw 0 0 0;
+    }
+
+    .bodypro img{
+        width: 60vw;
     }
 }
 
