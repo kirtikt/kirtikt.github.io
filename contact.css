@@ -549,22 +549,27 @@ justify-content: center;
         font-size: 2.7rem !important;
     }
     
+    .info{
+        flex-direction: column;
+    }
+
     .namendesignation,
     .social,
     .developed {
-        font-size: 0.6rem;
+        font-size: 1rem;
+        font-weight: bolder;
     }
 
     .namendesignation {
-        padding: 0 0 0 1rem;
+        padding: 1rem 0 0 1rem;
     }
 
     .developed {
-        padding: 0 0 0 2rem;
+        padding: 1rem 0 0 1rem;
     }
 
     .social {
-        padding: 0 0 0 2rem;
+        padding: 1rem 0 0 1rem;
     }
 
     .kirti {
