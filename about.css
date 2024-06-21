@@ -149,9 +149,10 @@ html {
 
 #devimage {
     width: 50vw;
-    margin: 50px 0 0 0;
+    margin: 50px 0 50px 0;
     height: 10%;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* box-shadow: 10px 10px 25px gray; */
     /* filter: grayscale(100%); */
     transition: filter 0.5s;
