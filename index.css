@@ -144,14 +144,14 @@ html {
     height: 10%;
     border-radius: 10px;
     /* box-shadow: 10px 10px 25px gray; */
-    filter: grayscale(100%);
-    transition: filter 0.5s;
+/*     filter: grayscale(100%); */
+/*     transition: filter 0.5s; */
 }
 
-#devimage:hover {
+/* #devimage:hover {
     filter: grayscale(0%);
     transition: 0.5s
-}
+} */
 
 .lowersection {
     float: right;
