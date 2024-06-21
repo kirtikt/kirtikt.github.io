@@ -140,9 +140,10 @@ html {
 
 #devimage {
     width: 50%;
-    margin: 50px 0 0 100px;
+    margin: 50px 0 100px 100px;
     height: 10%;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* box-shadow: 10px 10px 25px gray; */
 /*     filter: grayscale(100%); */
 /*     transition: filter 0.5s; */
