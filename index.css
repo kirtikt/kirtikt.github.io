@@ -145,8 +145,8 @@ html {
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* box-shadow: 10px 10px 25px gray; */
-/*     filter: grayscale(100%); */
-/*     transition: filter 0.5s; */
+    /* filter: grayscale(100%);
+    transition: filter 0.5s; */
 }
 
 /* #devimage:hover {
@@ -432,7 +432,7 @@ html {
     grid-template-columns: 200px 200px;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-content: center;
-    /* row-gap: 1fr; */
+    row-gap: 8vw;
     column-gap: 8vw;
 }
 
@@ -750,7 +750,7 @@ justify-content: center;
         flex-direction: column;
         justify-content: space-evenly;
         background: none;
-        font-size: bold;
+        font-weight: bold;
         align-items: center;
 
     }
