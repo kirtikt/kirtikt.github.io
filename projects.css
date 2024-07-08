@@ -827,7 +827,7 @@ justify-content: center;
         flex-direction: column;
         justify-content: space-evenly;
         background: none;
-        font-size: bold;
+        font-weight: bold;
         align-items: center;
 
     }
