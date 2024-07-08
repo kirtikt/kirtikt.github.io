@@ -109,6 +109,30 @@ html {
     transform-origin: bottom left;
 }
 
+.hover-underline-animation-nav {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.hover-underline-animation-nav::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation-nav:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .hover-underline-animation-bold {
     display: inline-block;
     position: relative;
