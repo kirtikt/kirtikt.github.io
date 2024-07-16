@@ -47,7 +47,17 @@ html {
     /* margin: 0 0 0 0; */
     /* new */
     background: none;
+    color: #cdcdcd;
+    mix-blend-mode: difference;
+    /* position: sticky; */
+    /* here */
 
+}
+
+.comma{
+    background: none;
+    color: #cdcdcd;
+    /* here */
 }
 
 /* new */
@@ -68,6 +78,8 @@ html {
 .links {
     position: fixed;
     z-index: 1;
+    mix-blend-mode: difference;
+    /* here */
 }
 
 /* new */
@@ -78,9 +90,11 @@ html {
 }
 
 .links a {
+    color: #cdcdcd;
     background: none;
     text-decoration: none;
-    color: black;
+    /* color: black; */
+    /* here */
 }
 
 .hover-underline-animation {
