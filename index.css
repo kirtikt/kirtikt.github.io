@@ -3,12 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #cdcdcd;
-    font-family: "Oxygen", "sans-serif";
+    font-family: "PP Neue Montreal", "-apple-system", "BlinkMacSystemFont", "Segoe UI,Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: black;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     /* Adding animation to all the elements for smooth slide effect in side navigration bar in small screen devices */
     /* You can specifiy the animation specifically for side-nave */
     transition: 0.7s ease-in-out;
+}
+
+@font-face {
+    font-family: "PP Neue Montreal";
+    src: url("../STATIC/PPNeueMontreal-Medium.f9b3b92f.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
 }
 
 input,
@@ -38,7 +48,7 @@ html {
 }
 
 .left {
-    font-weight: bolder;
+    /* font-weight: bolder; */
     font-size: 25px;
     /* new */
     position: fixed;
@@ -53,12 +63,12 @@ html {
     mix-blend-mode: difference;
     /* position: sticky; */
     /* here */
-
+    letter-spacing: 0.8px;
 }
 
 /* new */
 
-.comma{
+.comma {
     background: none;
     color: #cdcdcd;
     /* here */
@@ -92,6 +102,8 @@ html {
 }
 
 .links a {
+    font-weight: 500;
+    /*here1*/
     color: #cdcdcd;
     background: none;
     text-decoration: none;
@@ -150,7 +162,15 @@ html {
 .uppersection {
     font-weight: bold;
     font-size: 12vw;
-    margin: 50px 0 0 100px;
+    margin: 50px 0 6vw 100px;
+}
+
+.enthusiaticu {
+    background: none;
+}
+
+.developer {
+    background: none;
 }
 
 #devimage {
@@ -366,8 +386,10 @@ html {
     font-size: 24px;
     cursor: pointer;
     background: none;
-    /* color: inherit; */ /*here*/
-    mix-blend-mode: difference; /*here*/
+    /* color: inherit; */
+    /*here*/
+    mix-blend-mode: difference;
+    /*here*/
 }
 
 /* Newly added */
@@ -488,7 +510,7 @@ html {
     color: black;
 }
 
-/* underline effect for blend */
+/* underline for blend */
 .hover-underline-animation-blend {
     display: inline-block;
     position: relative;
@@ -533,13 +555,12 @@ html {
         margin: 10px 0 0 0;
         transition: all 0.3s ease-out;
     }
-    
 
-    /* .left{
-top: 0;
-left: 1rem;
-position: relative;
-} */
+
+    .left {
+        font-weight: bolder;
+        margin: 0.5rem 0 0 1rem;
+    }
 
     .burger {
         display: block !important;
@@ -747,10 +768,6 @@ justify-content: center;
         float: none;
     }
 
-    .left {
-        margin: 0 0 0 1rem;
-    }
-
     .hover-underline-animation-bold::after {
         height: 2px;
     }
@@ -863,7 +880,7 @@ justify-content: center;
         display: none;
     }
 
-    .nonecret{
+    .nonecret {
         display: none;
     }
 
