@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "PP Neue Montreal";
-    src: url("../STATIC/PPNeueMontreal-Medium.f9b3b92f.woff2") format("woff2");
+    src: url("PPNeueMontreal-Medium.f9b3b92f.woff2") format("woff2");
     font-weight: 500;
     font-style: normal;
     font-display: swap
@@ -49,7 +49,6 @@ html {
 }
 
 .left {
-    /* font-weight: 600; */
     font-size: 25px;
     /* new */
     position: fixed;
@@ -74,7 +73,6 @@ html {
 .current,
 .reside,
 .links {
-    /* font-weight: 600; */
     background: none;
     font-size: 20px;
 }
@@ -95,7 +93,6 @@ html {
     background: none;
     text-decoration: none;
     color: white;
-    /* font-weight: 600; */
 }
 
 .hover-underline-animation {
