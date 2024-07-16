@@ -428,7 +428,8 @@ html {
     font-size: 24px;
     cursor: pointer;
     background: none;
-    color: inherit;
+/*     color: inherit; */
+    mix-blend-mode: difference;
 }
 
 /* Newly added */
