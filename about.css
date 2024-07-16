@@ -472,7 +472,7 @@ html {
 .hover-underline-animation-blend {
     display: inline-block;
     position: relative;
-    color: #cdcdcd;
+    color: #cdcdcd !important;
 }
 
 .hover-underline-animation-blend::after {
@@ -483,7 +483,7 @@ html {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #cdcdcd;
+    background-color: #cdcdcd !important;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
