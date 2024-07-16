@@ -201,6 +201,10 @@ html {
     font-size: 100px;
 }
 
+.name{
+    background: none;
+}
+
 .arrowncreative {
     display: flex;
     justify-content: space-evenly;
