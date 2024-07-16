@@ -3,11 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #cdcdcd;
-    font-family: "Oxygen", "sans-serif";
+    font-family: "PP Neue Montreal", "-apple-system", "BlinkMacSystemFont", "Segoe UI,Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: black;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     /* Adding animation to all the elements for smooth slide effect in side navigration bar in small screen devices */
     /* You can specifiy the animation specifically for side-nave */
     transition: 0.7s ease-in-out;
+}
+
+@font-face {
+    font-family: "PP Neue Montreal";
+    src: url("PPNeueMontreal-Medium.f9b3b92f.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
 }
 
 input,
@@ -36,25 +47,17 @@ html {
 }
 
 .left {
-    font-weight: bolder;
     font-size: 25px;
-    /* new */
     position: fixed;
-    /* top: 0; */
-    /* new */
-
     z-index: 1;
-    /* margin: 0 0 0 0; */
-    /* new */
     background: none;
     color: #cdcdcd;
     mix-blend-mode: difference;
-    /* position: sticky; */
-    /* here */
+    letter-spacing: 0.8px;
 
 }
 
-.comma{
+.comma {
     background: none;
     color: #cdcdcd;
     /* here */
@@ -93,6 +96,7 @@ html {
     color: #cdcdcd;
     background: none;
     text-decoration: none;
+    font-weight: 500;
     /* color: black; */
     /* here */
 }
@@ -428,9 +432,12 @@ html {
     font-size: 24px;
     cursor: pointer;
     background: none;
-    /* color: inherit; */ /*here*/
-    mix-blend-mode: difference; /*here*/
+    /* color: inherit; */
+    /*here*/
+    mix-blend-mode: difference;
+    /*here*/
 }
+
 /* Newly added */
 
 .loader {
@@ -522,21 +529,21 @@ html {
     /* background: none; */
 }
 
-.probody-left{
+.probody-left {
     /* background: none; */
     margin: 0 0 0 20px;
     font-size: 20px;
     font-weight: bold;
 }
 
-.probody1-left{
+.probody1-left {
     /* background: none; */
     font-size: 20px;
     font-weight: bold;
     margin: 0 10px 0 0;
 }
 
-.prohead  a{
+.prohead a {
     text-decoration: none;
     color: black;
 }
@@ -581,11 +588,10 @@ html {
         transition: all 0.3s ease-out;
     }
 
-    /* .left{
-top: 0;
-left: 1rem;
-position: relative;
-} */
+    .left {
+        font-weight: bolder;
+        margin: 0.5rem 0 0 1rem;
+    }
 
     .burger {
         display: block !important;
@@ -790,11 +796,11 @@ justify-content: center;
         font-weight: bolder;
     }
 
-    .contactform{
+    .contactform {
         margin: 20vw 0 0 0;
     }
 
-    .info{
+    .info {
         flex-direction: column;
     }
 
@@ -819,10 +825,6 @@ justify-content: center;
 
     .kirti {
         float: none;
-    }
-
-    .left {
-        margin: 0 0 0 1rem;
     }
 
     .hover-underline-animation-bold::after {
@@ -950,30 +952,30 @@ justify-content: center;
         /* width: 50%; */
         margin: 100px 0 0 0;
     }
-    
+
     .card1 {
         width: 90%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         height: 70%;
         border-radius: 10px;
         /* background-color: #b82828; */
-    
+
     }
-    
+
     .card1img {
         width: 90%;
         border-radius: 5px;
         margin: 0 0 30px 0;
         /* background: none; */
     }
-    
+
     .card2img {
         width: 90%;
         border-radius: 5px;
         margin: 0 0 30px 0;
         /* background: none; */
     }
-    
+
     .cardmain {
         display: flex;
         justify-content: center;
@@ -982,7 +984,7 @@ justify-content: center;
         margin: 10px 0 0 0;
         /* background: none; */
     }
-    
+
     .cardmain1 {
         display: flex;
         justify-content: center;
@@ -991,29 +993,29 @@ justify-content: center;
         margin: 10px 0 0 0;
         /* background: none; */
     }
-    
+
     .prohead {
         font-size: 1.5rem;
         font-weight: bolder;
         margin: 20px;
         /* background: none; */
     }
-    
-    .probody-left{
+
+    .probody-left {
         /* background: none; */
         margin: 0 10px 10px 20px;
         font-size: 20px;
         font-weight: bold;
     }
-    
-    .probody1-left{
+
+    .probody1-left {
         /* background: none; */
         font-size: 20px;
         font-weight: bold;
         margin: 0 10px 10px 20px;
     }
 
-    .proimg-right{
+    .proimg-right {
         display: flex;
         justify-content: center;
         align-items: center;
