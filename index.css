@@ -488,6 +488,31 @@ html {
     color: black;
 }
 
+/* underline effect for blend */
+.hover-underline-animation-blend {
+    display: inline-block;
+    position: relative;
+    color: #cdcdcd;
+}
+
+.hover-underline-animation-blend::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #cdcdcd;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation-blend:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 /* @media only screen and (max-width: 605px) {
     .container {
         grid-template-columns: repeat(1);
