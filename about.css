@@ -3,11 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #cdcdcd;
-    font-family: "Oxygen", "sans-serif";
+    font-family: "PP Neue Montreal", "-apple-system", "BlinkMacSystemFont", "Segoe UI,Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: black;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     /* Adding animation to all the elements for smooth slide effect in side navigration bar in small screen devices */
     /* You can specifiy the animation specifically for side-nave */
     transition: 0.7s ease-in-out;
+}
+
+@font-face {
+    font-family: "PP Neue Montreal";
+    src: url("PPNeueMontreal-Medium.f9b3b92f.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
 }
 
 input,
@@ -36,7 +47,7 @@ html {
 }
 
 .left {
-    font-weight: bolder;
+    /* font-weight: bolder; */
     font-size: 25px;
     /* new */
     position: fixed;
@@ -50,11 +61,12 @@ html {
     color: #cdcdcd;
     mix-blend-mode: difference;
     /* position: sticky; */
+    letter-spacing: 0.8px;
     /* here */
 
 }
 
-.comma{
+.comma {
     background: none;
     color: #cdcdcd;
     /* here */
@@ -93,6 +105,7 @@ html {
     color: #cdcdcd;
     background: none;
     text-decoration: none;
+    font-weight: 500;
     /* color: black; */
     /* here */
 }
@@ -468,7 +481,7 @@ html {
     margin: 0 0 0 2rem;
 }
 
-/* underline for bold */
+/* underline for blend */
 .hover-underline-animation-blend {
     display: inline-block;
     position: relative;
@@ -508,11 +521,10 @@ html {
         transition: all 0.3s ease-out;
     }
 
-    /* .left{
-top: 0;
-left: 1rem;
-position: relative;
-} */
+    .left {
+        font-weight: bolder;
+        margin: 0.5rem 0 0 1rem;
+    }
 
     .burger {
         display: block !important;
@@ -742,10 +754,6 @@ justify-content: center;
 
     .kirti {
         float: none;
-    }
-
-    .left {
-        margin: 0 0 0 1rem;
     }
 
     .hover-underline-animation-bold::after {
