@@ -3,12 +3,23 @@
     padding: 0;
     box-sizing: border-box;
     background-color: black;
+    font-family: "PP Neue Montreal", "-apple-system", "BlinkMacSystemFont", "Segoe UI,Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: white;
-    font-family: "Oxygen", "sans-serif";
+    /* font-family: "Oxygen", "sans-serif"; */
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     /* Adding animation to all the elements for smooth slide effect in side navigration bar in small screen devices */
     /* You can specifiy the animation specifically for side-nave */
     transition: 0.7s ease-in-out;
+}
+
+@font-face {
+    font-family: "PP Neue Montreal";
+    src: url("../STATIC/PPNeueMontreal-Medium.f9b3b92f.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
 }
 
 input,
@@ -38,7 +49,7 @@ html {
 }
 
 .left {
-    font-weight: bolder;
+    /* font-weight: 600; */
     font-size: 25px;
     /* new */
     position: fixed;
@@ -49,6 +60,7 @@ html {
     /* margin: 0 0 0 0; */
     /* new */
     background: none;
+    letter-spacing: 0.9px;
 
 }
 
@@ -62,7 +74,7 @@ html {
 .current,
 .reside,
 .links {
-    font-weight: bolder;
+    /* font-weight: 600; */
     background: none;
     font-size: 20px;
 }
@@ -83,6 +95,7 @@ html {
     background: none;
     text-decoration: none;
     color: white;
+    /* font-weight: 600; */
 }
 
 .hover-underline-animation {
@@ -518,11 +531,10 @@ html {
         transition: all 0.3s ease-out;
     }
 
-    /* .left{
-top: 0;
-left: 1rem;
-position: relative;
-} */
+    .left {
+        font-weight: bolder;
+        margin: 0.5rem 0 0 1rem;
+    }
 
     .burger {
         display: block !important;
@@ -728,10 +740,6 @@ justify-content: center;
 
     .kirti {
         float: none;
-    }
-
-    .left {
-        margin: 0 0 0 1rem;
     }
 
     .hover-underline-animation-bold::after {
