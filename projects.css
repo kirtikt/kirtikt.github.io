@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: "PP Neue Montreal";
-    src: url("../STATIC/PPNeueMontreal-Medium.f9b3b92f.woff2") format("woff2");
+    src: url("PPNeueMontreal-Medium.f9b3b92f.woff2") format("woff2");
     font-weight: 500;
     font-style: normal;
     font-display: swap
@@ -73,7 +73,6 @@ html {
 .current,
 .reside,
 .links {
-    /* font-weight: bolder; */
     background: none;
     font-size: 20px;
 }
@@ -96,7 +95,6 @@ html {
     color: #cdcdcd;
     background: none;
     text-decoration: none;
-    /* font-weight: 500; */
     /* color: black; */
     /* here */
 }
