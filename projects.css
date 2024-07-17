@@ -855,6 +855,7 @@ justify-content: center;
         width: 100%;
         font-size: 24px;
         z-index: 999;
+        overflow: scroll; /*css for overflowing content of navbar in landscape mode*/
     }
 
     .show {
