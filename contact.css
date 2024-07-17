@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "PP Neue Montreal";
-    src: url("PPNeueMontreal-Medium.f9b3b92f.woff2") format("woff2");
+    src: url("../STATIC/PPNeueMontreal-Medium.f9b3b92f.woff2") format("woff2");
     font-weight: 500;
     font-style: normal;
     font-display: swap
@@ -49,6 +49,7 @@ html {
 }
 
 .left {
+    /* font-weight: 600; */
     font-size: 25px;
     /* new */
     position: fixed;
@@ -73,6 +74,7 @@ html {
 .current,
 .reside,
 .links {
+    /* font-weight: 600; */
     background: none;
     font-size: 20px;
 }
@@ -93,6 +95,7 @@ html {
     background: none;
     text-decoration: none;
     color: white;
+    /* font-weight: 600; */
 }
 
 .hover-underline-animation {
@@ -119,10 +122,11 @@ html {
     transform-origin: bottom left;
 }
 
+/* hover-Underline animation for navbar */
 .hover-underline-animation-nav {
     display: inline-block;
     position: relative;
-    color: black;
+    color: white;
 }
 
 .hover-underline-animation-nav::after {
@@ -130,13 +134,19 @@ html {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 4px;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: white;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
+
+.hover-underline-animation-nav:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* ------------------------------------- */
 
 .hover-underline-animation-nav:hover:after {
     transform: scaleX(1);
@@ -389,6 +399,10 @@ html {
     color: inherit;
 }
 
+.side-nav .hamburger{
+    mix-blend-mode: normal;
+}
+
 /* Newly added */
 
 .loader {
@@ -512,6 +526,39 @@ html {
         grid-template-columns: repeat(1);
     }
 } */
+
+/*nav-item-underline*/
+.nav-item-underline {
+    background-color: #464C47;
+}
+
+.navitem {
+    margin: 20px 0;
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    color: white;
+    /* Set your text color */
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    /* Adjust the thickness of the underline */
+    background-color: white;
+    /* Set your underline color */
+    transition: width 2s ease-out;
+}
+
+.underline.animate::after {
+    width: 100%;
+}
 
 /* Media Query for smaller screens */
 @media only screen and (max-width: 884px) {
@@ -763,13 +810,14 @@ justify-content: center;
         right: 0;
         top: -100%;
         padding: 4rem 2rem;
-        background: #8b8b8b;
+        background: #464C47;
         display: flex;
         flex-direction: column;
         width: 100%;
         font-size: 24px;
         z-index: 999;
-        overflow: scroll; /*css for overflowing content of navbar in landscape mode*/
+        overflow: scroll;
+        /* width: 1000vh; */
     }
 
     .show {
@@ -782,25 +830,27 @@ justify-content: center;
         justify-content: space-evenly;
         background: none;
         font-weight: bold;
-        align-items: center;
-        
+        /* align-items: center; */ /*under*/
+
     }
-    
+
     .nav-item-cnt a {
-        margin: 20px 3rem;
-        color: black;
+        margin: 0rem 20px 0 0.1rem; /*under*/
         padding: 1rem 0 0.2rem 0;
         background: none;
         text-decoration: none;
+        text-transform: uppercase; /*under*/
+        line-height: 1.2; /*under*/
+        font-size: 10vw; /*under*/
+        color: white; /*under*/
     }
-    
+
     .side-nav>.hamburger,
     .hamburger>i {
         background: none !important;
     }
-    
+
     .side-nav>.hamburger {
-        color: black;
         text-align: right;
         padding-right: 2rem;
         position: relative;
