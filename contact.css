@@ -566,15 +566,17 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    margin: 5vw 0 0 0;
+    margin: 10vh 0 0 0;
 }
 
 .smallreswork #resident a, .smallreswork #currently{
-    font-size: medium;
+    font-size: 3vh;
     /* background-color: #464C47; */
 }
 
 .smallreswork #resident, .smallreswork #currently{
+    font-size: 3vh;
+    margin: 3vh 0 0 0;
     display: block;
     color: white;
     background-color: #464C47;
@@ -866,7 +868,7 @@ justify-content: center;
         text-decoration: none;
         text-transform: uppercase; /*under*/
         line-height: 1.2; /*under*/
-        font-size: 10vw; /*under*/
+        font-size: 5vh; /*under*/
         color: white; /*under*/
     }
 
