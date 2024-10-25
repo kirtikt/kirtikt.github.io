@@ -209,4 +209,25 @@
       lerp: 0.1,
     });
   </script>
+    <script>
+    // Scroll update all pages
+
+    document.addEventListener("DOMContentLoaded", function () {
+      function ScrollUpdateDelay() {
+        setTimeout(function () {
+          scroll.update();
+        }, 500);
+      }
+
+      ScrollUpdateDelay();
+    });
+
+    // Scroll Update trigger
+
+    function ScrollUpdateTrig() {
+      setTimeout(function () {
+        scroll.update();
+      }, 500);
+    }
+  </script>
 </html>
