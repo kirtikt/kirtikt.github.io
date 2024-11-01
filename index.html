@@ -486,4 +486,14 @@
       }, 500);
     }
   </script>
+<!--   Locomotive scroll was not going till bottom end so chatgpt gave me this solution -->
+  <script>
+    window.onload = function () {
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector("#main"),
+    smooth: true,
+  });
+  scroll.update(); // Refresh to recalculate height
+};
+  </script>
 </html>
