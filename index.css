@@ -43,7 +43,7 @@ html {
   background: 0 0;
   color: #cdcdcd;
   mix-blend-mode: difference;
-  letter-spacing: 0.8px;
+  /* letter-spacing: 0.8px; */
 }
 .comma {
   background: 0 0;
@@ -58,6 +58,10 @@ html {
 .reside {
   background: 0 0;
   font-size: 20px;
+}
+.current,
+.reside {
+  font-weight: 600;
 }
 .links {
   position: fixed;

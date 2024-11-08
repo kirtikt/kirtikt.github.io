@@ -67,7 +67,7 @@ html {
   color: #cdcdcd;
   mix-blend-mode: difference;
   /* position: sticky; */
-  letter-spacing: 0.8px;
+  /* letter-spacing: 0.8px; */
   /* here */
 }
 
@@ -90,6 +90,11 @@ html {
   /* font-weight: bolder; */
   background: none;
   font-size: 20px;
+}
+
+.reside,
+.current {
+  font-weight: 600;
 }
 
 .links {
@@ -240,6 +245,8 @@ html {
 .creativeu,
 .developeru {
   background: none;
+  mix-blend-mode: difference;
+  color: #cdcdcd;
 }
 
 #devimage {

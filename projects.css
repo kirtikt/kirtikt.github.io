@@ -59,7 +59,7 @@ html {
   background: none;
   color: #cdcdcd;
   mix-blend-mode: difference;
-  letter-spacing: 0.8px;
+  /* letter-spacing: 0.8px; */
 }
 
 .comma {
@@ -81,6 +81,11 @@ html {
   /* font-weight: bolder; */
   background: none;
   font-size: 20px;
+}
+
+.current,
+.reside {
+  font-weight: 600;
 }
 
 .links {
@@ -213,25 +218,28 @@ html {
 .enthusiaticu {
   background: 0 0;
   /* width: max-content; */
-  line-height: 0.6;
+  /* line-height: 0.6; */
   font-size: 13vw;
 }
 .developer {
   font-size: 12vw;
   /* width: max-content; */
   background: 0 0;
-  line-height: 0.6;
+  /* line-height: 0.6; */
 }
 
 .creativeu {
-  font-size: 5vw;
-  line-height: 0.6;
+  font-size: 9.5vw;
+  /* line-height: 0.6; */
+  height: 30px;
 }
 
 .enthusiaticu,
 .creativeu,
 .developeru {
   background: none;
+  mix-blend-mode: difference;
+  color: #cdcdcd;
 }
 
 #devimage {

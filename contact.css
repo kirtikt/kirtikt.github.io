@@ -66,7 +66,7 @@ html {
   /* margin: 0 0 0 0; */
   /* new */
   background: none;
-  letter-spacing: 0.9px;
+  /* letter-spacing: 0.9px; */
 }
 
 /* new */
@@ -84,9 +84,15 @@ html {
   font-size: 20px;
 }
 
+.current,
+.reside{
+  font-weight: 400;
+}
 .links {
   position: fixed;
   z-index: 1;
+  mix-blend-mode: difference;
+  color: black;
 }
 
 /* new */
@@ -101,6 +107,10 @@ html {
   text-decoration: none;
   color: white;
   /* font-weight: 600; */
+}
+
+.linkscomma {
+  color: white;
 }
 
 .hover-underline-animation {
@@ -632,6 +642,26 @@ html {
   color: white; /* Hover text color */
 }
 
+#sociallinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 100px 0 0 0;
+}
+
+#sociallinks a {
+  font-size: 10vw;
+}
+
+#salutation{
+  margin: 300px 0 200px 100px;
+}
+
+.orwe {
+  font-size: 2vw;
+  font-weight: 500;
+}
 /* Media Query for smaller screens */
 @media only screen and (max-width: 884px) {
   #navbar {
