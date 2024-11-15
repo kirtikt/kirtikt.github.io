@@ -131,9 +131,10 @@ html {
   width: 100%;
   transform: scaleX(0);
   height: 2px;
-  bottom: 0;
+  bottom: 1px;
   left: 0;
   background-color: white;
+  mix-blend-mode: difference;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -630,9 +631,10 @@ html {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 18px;
   width: 100%;
   height: 4px;
+  mix-blend-mode: difference;
   background-color: currentColor; /* Underline color */
   transform: scaleX(0);
   transform-origin: bottom right;
@@ -669,6 +671,35 @@ html {
   font-size: 2vw;
   font-weight: light;
 }
+
+/* Hover underline animation for social links */
+.hover-underline-animation-bold-socials {
+  display: inline-block;
+  position: relative;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.hover-underline-animation-bold-socials::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 15px;
+  left: 0;
+  background-color: white;
+  mix-blend-mode: difference;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation-bold-socials:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* ------------------------------------------ */
 /* Media Query for smaller screens */
 @media only screen and (max-width: 884px) {
   #navbar {
