@@ -24,6 +24,10 @@
   font-display: swap;
 }
 
+.c-scrollbar_thumb {
+  background-color: white;
+}
+
 input,
 textarea,
 button,
