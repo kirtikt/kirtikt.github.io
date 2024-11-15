@@ -266,7 +266,7 @@ html {
   justify-content: space-around;
   align-items: center;
   font-size: 25px;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   margin: 100px 0 0 0;
   text-decoration: none;
   text-transform: uppercase;
@@ -373,7 +373,7 @@ html {
 .social,
 .developed {
   font-size: large;
-  font-weight: bolder;
+  /* font-weight: bolder; */
 }
 
 .social a {
@@ -663,7 +663,7 @@ html {
 
 .orwe {
   font-size: 2vw;
-  font-weight: 500;
+  font-weight: light;
 }
 /* Media Query for smaller screens */
 @media only screen and (max-width: 884px) {
@@ -1032,6 +1032,24 @@ justify-content: center;
     grid-template-columns: 200px 200px;
     grid-template-columns: repeat(1, minmax(100px, 1fr));
   }
+  
+  #sociallinks {
+    margin: 100px 0 0 0;
+  }
+  
+  #sociallinks a {
+    font-size: 18vw;
+    font-weight: bolder;
+  }
+  
+  #salutation{
+    margin: 30vw 0 0 10vw;
+  }
+  
+  .orwe {
+    font-size: 4vw;
+    font-weight: 500;
+  }
 }
 
 /* @media only screen and (max-width:1080px) {
@@ -1041,23 +1059,6 @@ justify-content: center;
     }
 
 } */
-#sociallinks {
-  margin: 100px 0 0 0;
-}
-
-#sociallinks a {
-  font-size: 13vw;
-  font-weight: bolder;
-}
-
-#salutation{
-  margin: 30vw 0 0 5vw;
-}
-
-.orwe {
-  font-size: 5vw;
-  font-weight: 500;
-}
 
 @media only screen and (max-width: 957px) and (min-width: 885px) {
   .lowersection {
