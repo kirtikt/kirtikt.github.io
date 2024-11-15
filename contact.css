@@ -67,6 +67,8 @@ html {
   /* new */
   background: none;
   /* letter-spacing: 0.9px; */
+  color: white;
+  mix-blend-mode: difference;
 }
 
 /* new */
@@ -411,6 +413,7 @@ html {
   cursor: pointer;
   background: none;
   color: inherit;
+  mix-blend-mode: difference;
 }
 
 .side-nav .hamburger {
@@ -960,7 +963,7 @@ justify-content: center;
   }
 
   .hover-underline-animation-bold::after {
-    height: 2px;
+    height: 4px;
   }
 
   .left-pre {
@@ -1038,6 +1041,23 @@ justify-content: center;
     }
 
 } */
+#sociallinks {
+  margin: 100px 0 0 0;
+}
+
+#sociallinks a {
+  font-size: 13vw;
+  font-weight: bolder;
+}
+
+#salutation{
+  margin: 30vw 0 0 5vw;
+}
+
+.orwe {
+  font-size: 5vw;
+  font-weight: 500;
+}
 
 @media only screen and (max-width: 957px) and (min-width: 885px) {
   .lowersection {
