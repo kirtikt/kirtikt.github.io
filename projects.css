@@ -776,10 +776,11 @@ html {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  overflow: hidden;
 }
 .subtitle,
 .descr {
-  width: 50%;
+  width: 60%;
 }
 .subtitle {
   display: flex;
@@ -1148,25 +1149,28 @@ justify-content: center;
   }
 
   .enthusiatic,
-  .developer,
-  .creativetitle {
+  .developer {
     /* margin: 0 0 10px 0; */
     align-items: center;
     justify-content: center;
-    line-height: 0.9;
+    /* line-height: 0.9; */
+  }
+  .creativetitle {
+    margin: 0 0 0 15vw;
+    /* line-height: 0.9; */
   }
   .developeru {
     font-size: 14vw;
     line-height: 1.2;
   }
   .enthusiaticu {
-    line-height: 1.2;
+    /* line-height: 1.2; */
     font-size: 15vw;
   }
 
   .creativeu {
     font-size: 10vw;
-    line-height: 1.2;
+    /* line-height: 1.2; */
   }
 
   .services {
