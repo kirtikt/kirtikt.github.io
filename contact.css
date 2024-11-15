@@ -658,7 +658,7 @@ html {
 }
 
 #salutation{
-  margin: 300px 0 200px 100px;
+  margin: 300px 0 150px 100px;
 }
 
 .orwe {
@@ -852,10 +852,12 @@ justify-content: center;
     width: 100%;
     max-width: 100%;
     margin: 2.5rem 0 0 0;
+    height: 40vh;
   }
 
   #contact .gmail a {
-    font-size: 13vw;
+    font-size: 14vw;
+    background: none;
     font-weight: bolder;
   }
 
@@ -1047,8 +1049,12 @@ justify-content: center;
   }
   
   .orwe {
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: 500;
+  }
+
+  #firstcontact {
+    height: 45vh;
   }
 }
 

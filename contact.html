@@ -28,7 +28,7 @@
   </head>
 
   <style>
-    #main{
+    #main {
       height: max-content;
     }
   </style>
@@ -68,7 +68,8 @@
           <div class="links-pre">
             <!--New-->
             <div class="links" id="big-nav">
-              <a href="./" class="hover-underline-animation">Home</a><span class="linkscomma">,</span>
+              <a href="./" class="hover-underline-animation">Home</a
+              ><span class="linkscomma">,</span>
               <a href="/about" class="hover-underline-animation">About Me</a
               ><span class="linkscomma">,</span>
               <a href="/projects" class="hover-underline-animation">Projects</a
@@ -134,30 +135,45 @@
       </nav>
     </header>
     <div id="main">
-      <div class="projecthead">
-        <div>Want to build<br />something creative?</div>
-        <div>Let's get<br />in touch!</div>
-      </div>
+      <div id="firstcontact">
+        <div class="projecthead">
+          <div>Want to build<br />something creative?</div>
+          <div>Let's get<br />in touch!</div>
+        </div>
 
-      <section id="contact">
-        <div class="gmail">
-          <a href="mailto:kirtikt09@gmail.com" class=""
-            ><span class="gmaila hover-underline-animation">KIRTIKT09</span
-            ><br /><span class="gmaila hover-underline-animation"
-              >@GMAIL.COM</span
-            ></a
-          >
-        </div>
-      </section>
+        <section id="contact">
+          <div class="gmail">
+            <a href="mailto:kirtikt09@gmail.com" class=""
+              ><span class="gmaila hover-underline-animation">KIRTIKT09</span
+              ><br /><span class="gmaila hover-underline-animation"
+                >@GMAIL.COM</span
+              ></a
+            >
+          </div>
+        </section>
+      </div>
       <section id="salutation">
-        <div class="orwe">
-          Or we can meet on...
-        </div>
+        <div class="orwe">Or we can meet on...</div>
       </section>
       <section id="sociallinks">
-        <a href="https://www.instagram.com/kirtiitiwari09/" class="hover-underline-animation-bold" target="_blank">Instagram,</a>
-        <a href="https://twitter.com/KirtiTiwar37977" class="hover-underline-animation-bold" target="_blank">Twitter,</a>
-        <a href="https://linkedin.com/in/kirti-tiwari-084b351b1" class="hover-underline-animation-bold" target="_blank">LinkedIn</a>
+        <a
+          href="https://www.instagram.com/kirtiitiwari09/"
+          class="hover-underline-animation-bold"
+          target="_blank"
+          >Instagram,</a
+        >
+        <a
+          href="https://twitter.com/KirtiTiwar37977"
+          class="hover-underline-animation-bold"
+          target="_blank"
+          >Twitter,</a
+        >
+        <a
+          href="https://linkedin.com/in/kirti-tiwari-084b351b1"
+          class="hover-underline-animation-bold"
+          target="_blank"
+          >LinkedIn</a
+        >
       </section>
       <footer>
         <div class="info">
@@ -219,7 +235,7 @@
       lerp: 0.1,
     });
   </script>
-    <script>
+  <script>
     // Scroll update all pages
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -242,11 +258,11 @@
   </script>
   <script>
     window.onload = function () {
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector("#main"),
-    smooth: true,
-  });
-  scroll.update(); // Refresh to recalculate height
-};
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector("#main"),
+        smooth: true,
+      });
+      scroll.update(); // Refresh to recalculate height
+    };
   </script>
 </html>
