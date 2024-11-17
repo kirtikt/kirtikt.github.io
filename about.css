@@ -52,7 +52,7 @@ html {
   margin: 30px 0 0 0;
 }
 
-.left {
+.left a{
   /* font-weight: bolder; */
   font-size: 25px;
   /* new */
@@ -144,6 +144,32 @@ html {
   transform-origin: bottom left;
 }
 
+/* Hover underline animatiom for current and reside */
+.hover-underline-animation-curres {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation-curres::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 1px;
+  left: 0;
+  background-color: #cdcdcd;
+  mix-blend-mode: difference;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation-curres:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* ------------------------------------------------ */
 /* hover-Underline animation for navbar */
 .hover-underline-animation-nav {
   display: inline-block;
@@ -576,9 +602,10 @@ html {
   width: 100%;
   transform: scaleX(0);
   height: 2px;
-  bottom: 0;
+  bottom: 1px;
   left: 0;
   background-color: #cdcdcd !important;
+  mix-blend-mode: difference;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -588,6 +615,32 @@ html {
   transform-origin: bottom left;
 }
 
+/* Hover underline for footer */
+.hover-underline-animation-footer {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation-footer::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #cdcdcd;
+  mix-blend-mode: difference;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation-footer:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* -------------------------- */
 /*nav-item-underline*/
 .nav-item-underline {
   background-color: #464c47;
@@ -672,10 +725,11 @@ html {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 19px;
   width: 100%;
   height: 4px;
-  background-color: currentColor; /* Underline color */
+  background-color: #cdcdcd; /* Underline color */
+  mix-blend-mode: difference;
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease;
@@ -698,7 +752,7 @@ html {
     width: 100%;
   }
 
-  .left,
+  .left a,
   .current,
   .reside,
   .links {
@@ -706,7 +760,7 @@ html {
     transition: all 0.3s ease-out;
   }
 
-  .left {
+  .left a {
     font-weight: bolder;
     margin: 0.5rem 0 0 1rem;
   }
@@ -1095,6 +1149,9 @@ justify-content: center;
   .contactform {
     margin: 20vw 0 0 0;
   }
+  .gmail .hover-underline-animation::after {
+    bottom: 1.5vw;
+  }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -1195,7 +1252,7 @@ justify-content: center;
 
 /* new */
 @media only screen and (max-width: 1200px) {
-  .left,
+  .left a,
   .current,
   .reside,
   .links {
