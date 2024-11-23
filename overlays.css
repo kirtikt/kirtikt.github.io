@@ -86,7 +86,7 @@
 .overlay1-body p {
   background-color: #464c47;
   color: white;
-  font-size: 1.7vw;
+  font-size: 2.2vw;
 }
 
 .overlay1-body {
@@ -224,7 +224,8 @@
 .overlay-body2 p {
   background-color: #464c47;
   color: white;
-  font-size: 1.7vw;
+  font-size: 2.2vw;
+  
 }
 
 .overlay-body2 {
@@ -274,6 +275,9 @@
 }
 
 @media only screen and (max-width: 990px) {
+  .cover-page,.cover-page2 {
+    overflow: scroll;
+  }
   .overlay-content {
     flex-direction: column;
     justify-content: space-between;
@@ -334,6 +338,7 @@
   }
   .overlay1-imagescroll img {
     width: 80vw;
+    margin: 0 0 10vw 0;
   }
 
   /* Second overlay */
@@ -397,5 +402,6 @@
   }
   .overlay-imagescroll2 img {
     width: 80vw;
+    margin: 0 0 10vw 0;
   }
 }
