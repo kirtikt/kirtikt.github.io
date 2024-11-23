@@ -25,13 +25,14 @@
 
     <!-- Previously you were refering to the css file in the wrong manner -->
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="overlays.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="icon" type="image/x-icon" href="logo.png" />
     <!-- <link rel="stylesheet" href="../CSS/responsive.css"> -->
   </head>
 
   <style>
-    #main{
+    #main {
       height: max-content;
     }
   </style>
@@ -41,6 +42,92 @@
       <div class="loader">
         <div class="mainname">Kirti Tiwari</div>
         <div class="portnyear">PORTFOLIO</div>
+      </div>
+    </section>
+    <section id="overlay-1">
+      <div class="cover-page">
+        <div class="pre-overlay-nav">
+          <div class="overlay-nav">
+            <ul>
+              <li>Case Study</li>
+              <li>
+                <a href="https://github.com/kirtikt/Prospex.git" target="_blank"
+                  >Visit live link</a
+                >
+              </li>
+              <li>Prospex</li>
+              <li><button class="close-btn">Close</button></li>
+            </ul>
+          </div>
+        </div>
+        <div class="overlay-content">
+          <div class="overlay1-body">
+            <p>
+              The Employee Management System demonstrated how Django ORM can
+              handle real-world scenarios involving multiple entities and
+              complex relationships. By leveraging these features, organizations
+              can effectively manage their data and improve productivity.
+            </p>
+            <div class="project-info">Project Info</div>
+            <div class="overlay1-hr">
+              <hr />
+            </div>
+            <div class="project-year">
+              <ul>
+                <li>YEAR</li>
+                <li>2022</li>
+              </ul>
+            </div>
+          </div>
+          <div class="overlay1-imagescroll">
+            <img
+              src="../kirtikt.github.io/prosepex_images/prospex.png"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="overlay-2">
+      <div class="cover-page2">
+        <div class="overlay-nav2">
+          <ul>
+            <li>Case Study</li>
+            <li>
+              <a href="https://github.com/kirtikt/Navitix.git" target="_blank"
+                >Visit live link</a
+              >
+            </li>
+            <li>Navitix</li>
+            <li><button class="close-btn2">Close</button></li>
+          </ul>
+        </div>
+        <div class="overlay-content2">
+          <div class="overlay-body2">
+            <p>
+              An interactive map that displays geolocation data, transforming
+              raw address information into precise coordinates using the Google
+              Geocoding API. With effective clustering, it ensures smooth
+              navigation even with large datasets.
+            </p>
+            <div class="project-info2">Project Info</div>
+            <div class="overlay-hr2">
+              <hr />
+            </div>
+            <div class="project-year2">
+              <ul>
+                <li>YEAR</li>
+                <li>2023</li>
+              </ul>
+            </div>
+          </div>
+          <div class="overlay-imagescroll2">
+            <img
+              src="../kirtikt.github.io/prosepex_images/navitix.png"
+              alt="Image 1"
+            />
+          </div>
+        </div>
       </div>
     </section>
     <header>
@@ -71,8 +158,7 @@
           <div class="links-pre">
             <!--New-->
             <div class="links" id="big-nav">
-              <a href="./" class="hover-underline-animation-blend"
-                >Home</a
+              <a href="./" class="hover-underline-animation-blend">Home</a
               ><span class="comma">,</span>
               <a href="/about" class="hover-underline-animation-blend"
                 >About Me</a
@@ -358,32 +444,32 @@
         </div>
         <div class="project-one">
           <div class="headdiv">
-            <a
-              href="https://github.com/kirtikt/LeadGenerationApp.git"
-              target="_blank"
-              ><span class="hover-underline-animation-project" style="cursor: pointer"
+            <a href="" class="cover-link"
+              ><span
+                class="hover-underline-animation-project"
+                style="cursor: pointer"
                 >Prospex</span
               ></a
             >
           </div>
           <div class="imgdiv">
-            <a
-              href="https://github.com/kirtikt/LeadGenerationApp.git"
-              target="_blank"
+            <a href="" class="cover-link"
               ><img src="Q.jpg" alt="Prospex Image" width="80%"
             /></a>
           </div>
         </div>
         <div class="project-two">
           <div class="headdiv">
-            <a href="https://github.com/kirtikt/AI-Track.git"
-              ><span class="hover-underline-animation-project" style="cursor: pointer"
+            <a href="#" class="cover-link2"
+              ><span
+                class="hover-underline-animation-project"
+                style="cursor: pointer"
                 >Navitix</span
               ></a
             >
           </div>
           <div class="imgdiv">
-            <a href="https://github.com/kirtikt/AI-Track.git"
+            <a href="" class="cover-link2"
               ><img src="AI.jpeg" alt="Navitix Image" width="80%"
             /></a>
           </div>
@@ -457,6 +543,7 @@
     <!-- You are not getting single lerp effect in enthusiastic because width .enthusiastic is very low -->
   </body>
   <script src="index.js"></script>
+  <script src="overlays.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
   <script>
     const scroll = new LocomotiveScroll({
@@ -465,7 +552,7 @@
       lerp: 0.1,
     });
   </script>
-    <script>
+  <script>
     // Scroll update all pages
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -486,14 +573,14 @@
       }, 500);
     }
   </script>
-<!--   Locomotive scroll was not going till bottom end so chatgpt gave me this solution -->
+  <!--   Locomotive scroll was not going till bottom end so chatgpt gave me this solution -->
   <script>
     window.onload = function () {
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector("#main"),
-    smooth: true,
-  });
-  scroll.update(); // Refresh to recalculate height
-};
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector("#main"),
+        smooth: true,
+      });
+      scroll.update(); // Refresh to recalculate height
+    };
   </script>
 </html>

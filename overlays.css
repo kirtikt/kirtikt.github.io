@@ -1,0 +1,399 @@
+/* Initial state of the cover page */
+.cover-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #464c47; /* Semi-transparent background */
+  z-index: 9999;
+  transform: translateY(100%); /* Start off-screen */
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease; /* Added opacity transition */
+  opacity: 0; /* Initially invisible */
+  pointer-events: none; /* Prevent interaction before showing */
+}
+
+.cover-page.open {
+  transform: translateY(0); /* Slide in the page */
+  opacity: 1; /* Make it visible */
+  pointer-events: all; /* Enable interaction once shown */
+}
+
+.cover-page.close {
+  opacity: 0; /* Fade out */
+  pointer-events: none; /* Disable interaction after fading out */
+}
+
+/* Close button styling */
+.cover-page .close-btn {
+  /* background-color: #fff; */
+  border: none;
+  font-size: 1.5vw;
+  cursor: pointer;
+  background-color: #464c47;
+  color: white;
+}
+
+/* Optional styling for the link */
+.cover-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.overlay-nav {
+  background-color: #464c47;
+  margin-top: 1.5vw;
+}
+
+.overlay-nav ul {
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #464c47;
+}
+
+.overlay-nav ul li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5vw;
+  background-color: #464c47;
+  color: white;
+}
+
+.overlay-nav ul li a {
+  background-color: #464c47;
+  color: white;
+}
+
+.overlay-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 3vw;
+  background-color: #464c47;
+}
+
+.overlay1-body,
+.overlay1-imagescroll {
+  width: 50%;
+  background: none;
+}
+
+.overlay1-body p {
+  background-color: #464c47;
+  color: white;
+  font-size: 1.7vw;
+}
+
+.overlay1-body {
+  padding: 2vw 0 0 6vw;
+  overflow: hidden;
+}
+
+.project-info {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.8vw;
+  background-color: #464c47;
+  margin: 5vw 0 2vw 0;
+}
+
+.project-year ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #464c47;
+}
+
+.overlay1-hr hr {
+  border-color: white;
+}
+
+.project-year ul li {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  background-color: #464c47;
+  font-size: 1.5vw;
+  margin-top: 1.5vw;
+}
+
+.overlay1-imagescroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vw;
+}
+
+.overlay1-imagescroll img {
+  width: 70%;
+}
+
+/* Second overlay */
+/* Initial state of the cover page */
+.cover-page2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #464c47; /* Semi-transparent background */
+  z-index: 9999;
+  transform: translateY(100%); /* Start off-screen */
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease; /* Added opacity transition */
+  opacity: 0; /* Initially invisible */
+  pointer-events: none; /* Prevent interaction before showing */
+}
+
+.cover-page2.open2 {
+  transform: translateY(0); /* Slide in the page */
+  opacity: 1; /* Make it visible */
+  pointer-events: all; /* Enable interaction once shown */
+}
+
+.cover-page2.close2 {
+  opacity: 0; /* Fade out */
+  pointer-events: none; /* Disable interaction after fading out */
+}
+
+/* Close button styling */
+.cover-page2 .close-btn2 {
+  /* background-color: #fff; */
+  border: none;
+  font-size: 1.5vw;
+  cursor: pointer;
+  background-color: #464c47;
+  color: white;
+}
+
+/* Optional styling for the link */
+.cover-link2 {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.overlay-nav2 {
+  background-color: #464c47;
+  margin-top: 1.5vw;
+}
+
+.overlay-nav2 ul {
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #464c47;
+}
+
+.overlay-nav2 ul li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5vw;
+  background-color: #464c47;
+  color: white;
+}
+
+.overlay-nav2 ul li a {
+  background-color: #464c47;
+  color: white;
+}
+
+.overlay-content2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 3vw;
+  background-color: #464c47;
+}
+
+.overlay-body2,
+.overlay-imagescroll2 {
+  width: 50%;
+  background: none;
+}
+
+.overlay-body2 p {
+  background-color: #464c47;
+  color: white;
+  font-size: 1.7vw;
+}
+
+.overlay-body2 {
+  padding: 2vw 0 0 6vw;
+  overflow: hidden;
+}
+
+.project-info2 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.8vw;
+  background-color: #464c47;
+  margin: 5vw 0 2vw 0;
+}
+
+.project-year2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #464c47;
+}
+
+.overlay-hr2 hr {
+  border-color: white;
+}
+
+.project-year2 ul li {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  background-color: #464c47;
+  font-size: 1.5vw;
+  margin-top: 1.5vw;
+}
+
+.overlay-imagescroll2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vw;
+}
+
+.overlay-imagescroll2 img {
+  width: 70%;
+}
+
+@media only screen and (max-width: 990px) {
+  .overlay-content {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .overlay-nav {
+    margin-bottom: 10vw;
+  }
+
+  .overlay-nav ul {
+    padding: 2vw 4vw 0 4vw;
+    justify-content: space-between;
+  }
+
+  .overlay-nav ul li:nth-child(3){
+    position: absolute;
+    top: 25vw;
+    left: 7vw;
+    font-size: 10vw;
+    background: none;
+  }
+
+  .overlay-nav ul li:nth-child(2){
+    position: absolute;
+    left: 4.9vw;
+    top: 14vw;
+  }
+
+  .overlay-nav ul li, .overlay-nav ul li .close-btn {
+    font-size: 5vw;
+  }
+
+  .overlay1-body p {
+    font-size: 6vw;
+    margin-top: 5vw;
+  }
+
+  .overlay1-body {
+    width: 85%;
+    padding: 0;
+    margin: 15vw 0 0 0;
+  }
+
+  .project-info {
+    font-size: 5vw;
+    margin: 10vw 0 5vw 0;
+  }
+  
+  .project-year ul {
+    margin: 5vw 0 5vw 0;
+  }
+  .project-year ul li {
+    font-size: 5vw;
+  }
+
+  .overlay1-imagescroll {
+    margin-top: 5vw;
+  }
+  .overlay1-imagescroll img {
+    width: 80vw;
+  }
+
+  /* Second overlay */
+  .overlay-content2 {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .overlay-nav2 {
+    margin-bottom: 10vw;
+  }
+
+  .overlay-nav2 ul {
+    padding: 2vw 4vw 0 4vw;
+    justify-content: space-between;
+  }
+
+  .overlay-nav2 ul li:nth-child(3){
+    position: absolute;
+    top: 25vw;
+    left: 7vw;
+    font-size: 10vw;
+    background: none;
+  }
+
+  .overlay-nav2 ul li:nth-child(2){
+    position: absolute;
+    left: 4.9vw;
+    top: 14vw;
+  }
+
+  .overlay-nav2 ul li, .overlay-nav2 ul li .close-btn2 {
+    font-size: 5vw;
+  }
+
+  .overlay-body2 p {
+    font-size: 6vw;
+    margin-top: 5vw;
+  }
+
+  .overlay-body2 {
+    width: 85%;
+    padding: 0;
+    margin: 15vw 0 0 0;
+  }
+
+  .project-info2 {
+    font-size: 5vw;
+    margin: 10vw 0 5vw 0;
+  }
+  
+  .project-year2 ul {
+    margin: 5vw 0 5vw 0;
+  }
+  .project-year2 ul li {
+    font-size: 5vw;
+  }
+
+  .overlay-imagescroll2 {
+    margin-top: 5vw;
+  }
+  .overlay-imagescroll2 img {
+    width: 80vw;
+  }
+}
