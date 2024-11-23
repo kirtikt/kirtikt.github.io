@@ -132,6 +132,7 @@
 
 .overlay1-imagescroll img {
   width: 70%;
+  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
 }
 
 /* Second overlay */
@@ -269,6 +270,7 @@
 
 .overlay-imagescroll2 img {
   width: 70%;
+  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
 }
 
 @media only screen and (max-width: 990px) {
