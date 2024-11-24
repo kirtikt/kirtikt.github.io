@@ -429,6 +429,13 @@ content: "";
   width: 50%;
   text-align: center;
 }
+
+.project-two .imgdiv a, .project-one .imgdiv a {
+  display: inline-block;
+  height: 100%;
+  width: 80%;
+  overflow: hidden;
+}
 /* ---------------------- */
 .hover-underline-animation-blend {
   display: inline-block;
