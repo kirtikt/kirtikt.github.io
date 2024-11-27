@@ -127,7 +127,7 @@
 }
 
 .overlay1-imagescroll {
-  width: 60vw;
+  width: 65vw;
   display: flex;
   align-items: center;
   position: absolute; /* Allows images to overlap */
@@ -140,148 +140,12 @@
 }
 
 .overlay1-imagescroll img {
-  width: 30vw;
-  height: 40vh;
+  width: 38vw;
+  height: 50vh;
   margin: 0 20px;
   /* opacity: 0.9; Slight transparency for overlapping effect */
   pointer-events: none; /* Prevent interaction */
 }
-
-/* Second overlay */
-/* Initial state of the cover page */
-/* .cover-page2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #464c47;
-  z-index: 9999;
-  transform: translateY(100%);
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease;
-  opacity: 0; 
-  pointer-events: none;
-}
-
-.cover-page2.open2 {
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: all;
-}
-
-.cover-page2.close2 {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.cover-page2 .close-btn2 {
-  border: none;
-  font-size: 1.5vw;
-  cursor: pointer;
-  background-color: #464c47;
-  color: white;
-}
-
-.cover-link2 {
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.overlay-nav2 {
-  background-color: #464c47;
-  margin-top: 1.5vw;
-}
-
-.overlay-nav2 ul {
-  height: 6vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #464c47;
-}
-
-.overlay-nav2 ul li {
-  list-style: none;
-  text-decoration: none;
-  font-size: 1.5vw;
-  background-color: #464c47;
-  color: white;
-}
-
-.overlay-nav2 ul li a {
-  background-color: #464c47;
-  color: white;
-}
-
-.overlay-content2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
-  margin-top: 3vw;
-  background-color: #464c47;
-}
-
-.overlay-body2,
-.overlay-imagescroll2 {
-  width: 50%;
-  background: none;
-}
-
-.overlay-body2 p {
-  background-color: #464c47;
-  color: white;
-  font-size: 2.2vw;
-  
-}
-
-.overlay-body2 {
-  padding: 2vw 0 0 6vw;
-  overflow: hidden;
-}
-
-.project-info2 {
-  text-transform: uppercase;
-  color: white;
-  font-size: 1.8vw;
-  background-color: #464c47;
-  margin: 5vw 0 2vw 0;
-}
-
-.project-year2 ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  background-color: #464c47;
-}
-
-.overlay-hr2 hr {
-  border-color: white;
-}
-
-.project-year2 ul li {
-  color: white;
-  text-decoration: none;
-  list-style: none;
-  background-color: #464c47;
-  font-size: 1.5vw;
-  margin-top: 1.5vw;
-}
-
-.overlay-imagescroll2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2vw;
-}
-
-.overlay-imagescroll2 img {
-  width: 70%;
-  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
-} */
 
 /* Initial state of the cover page */
 .cover-page2 {
@@ -412,7 +276,7 @@
 }
 
 .overlay-imagescroll2 {
-  width: 60vw;
+  width: 65vw;
   display: flex;
   align-items: center;
   position: absolute; /* Allows images to overlap */
@@ -425,8 +289,8 @@
 }
 
 .overlay-imagescroll2 img {
-  width: 30vw;
-  height: 40vh;
+  width: 38vw;
+  height: 50vh;
   margin: 0 20px;
   /* opacity: 0.9; Slight transparency for overlapping effect */
   pointer-events: none; /* Prevent interaction */
