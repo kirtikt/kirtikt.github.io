@@ -10,6 +10,15 @@
       rel="stylesheet"
     />
 
+    <!-- Adding preload for font -->
+    <link
+      rel="preload"
+      href="/PPNeueMontreal-Medium.f9b3b92f.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
     <!-- Linking a new file to provide the Icons for hamburger and menu -->
     <link
       rel="stylesheet"
@@ -30,9 +39,9 @@
   </head>
 
   <style>
-      #main{
-        height: max-content;
-      }
+    #main {
+      height: max-content;
+    }
   </style>
 
   <body>
@@ -70,8 +79,7 @@
           <div class="links-pre">
             <!--New-->
             <div class="links" id="big-nav">
-              <a href="./" class="hover-underline-animation-blend"
-                >Home</a
+              <a href="./" class="hover-underline-animation-blend">Home</a
               ><span class="comma">,</span>
               <a href="/about" class="hover-underline-animation-blend"
                 >About Me</a
@@ -392,7 +400,12 @@
         <img src="aboutdev.jpg" alt="Developer Image" />
       </section>
       <section class="services">
-        <div class="service-head-pre" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
+        <div
+          class="service-head-pre"
+          data-scroll
+          data-scroll-speed="-1"
+          data-scroll-direction="horizontal"
+        >
           <div class="service-head">SERVICES</div>
         </div>
         <div class="hr-pre">
@@ -519,7 +532,7 @@
       lerp: 0.1,
     });
   </script>
-    <script>
+  <script>
     // Scroll update all pages
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -542,11 +555,11 @@
   </script>
   <script>
     window.onload = function () {
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector("#main"),
-    smooth: true,
-  });
-  scroll.update(); // Refresh to recalculate height
-};
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector("#main"),
+        smooth: true,
+      });
+      scroll.update(); // Refresh to recalculate height
+    };
   </script>
 </html>
